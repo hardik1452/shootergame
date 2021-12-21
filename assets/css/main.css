@@ -1,0 +1,19 @@
+.character{
+    width: 350px;
+}
+.flipped{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.div1{
+    display: flex;
+  column-gap: 50px;
+  justify-content: space-between;
+
+}
+th,td{
+    text-align: center;
+}
+#resultdiv{
+ visibility: hidden;
+}

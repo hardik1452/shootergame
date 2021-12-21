@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" ></script>
+    <title>Game Assignment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <h3>Player 1: <span id="playeronehealth">100</span></h3>
+                <img class="character" src="assets/img/playerstatic.jpg" id="playeroneimage" alt="Player 1">
+                <button class="btn btn-danger disabled" id="shooterone" onclick="ponefire()">Shoot</button>
+            </div>
+            <div class="col-md-4 text-center pt-5">
+                <div class="alert alert-info mt-3" id="resultdiv">
+                    <h4 id="result"></h4>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Player 2: <span id="playertwohealth">100</span></h3>
+                <img class="character flipped" src="assets/img/playerstatic.jpg" id="playertwoimage" alt="Player 2">
+                <button class="btn btn-danger disabled" id="shootertwo" onclick="ptwofire()">Shoot</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3  div1">
+            <button class="btn btn-primary" id="startbtn" onclick="startgame()">Start</button>
+            <button class="btn btn-primary" onclick="resetGame()">Reset</button>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">  
+                        <tr>
+                            <th>Player 1</th>
+                            <th>Player 2</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td id="playeronescore">0</td>
+                        <td id="playertwoscore">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
